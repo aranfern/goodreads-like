@@ -1,6 +1,7 @@
 package com.github.aranfern.infrastructure;
 
 import com.github.aranfern.domain.Book;
+import com.github.aranfern.domain.BookNotFoundException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
@@ -18,5 +19,14 @@ public class BookInMemoryRepository implements BookRepository {
   @Override
   public void save(Book book) {
     books.put(book.getId(), book);
+  }
+
+  @Override
+  public Book getById(UUID id) {
+    if (!books.containsKey(id)) {
+      throw new BookNotFoundException();
+    }
+
+    return books.get(id);
   }
 }

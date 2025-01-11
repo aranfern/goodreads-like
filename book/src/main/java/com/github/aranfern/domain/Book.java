@@ -11,4 +11,11 @@ import lombok.NoArgsConstructor;
 public class Book {
   private UUID id;
   private String name;
+  private String author;
+  private String description;
+  private Integer year;
+  private String isbn;
+  private Double averageRating;
+  private String cover;
+  private String language;
 }

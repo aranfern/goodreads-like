@@ -2,6 +2,7 @@ package com.github.aranfern.application;
 
 import com.github.aranfern.domain.Book;
 import java.util.List;
+import java.util.UUID;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -16,6 +17,11 @@ public class BookController {
   @GetMapping
   public List<Book> findAll() {
     return bookService.findAll();
+  }
+
+  @GetMapping("/{id}")
+  public Book getById(@PathVariable(name = "id") UUID id) {
+    return bookService.getById(id);
   }
 
   @PostMapping
