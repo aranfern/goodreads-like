@@ -2,9 +2,8 @@ package com.github.aranfern.application;
 
 import com.github.aranfern.domain.Book;
 import com.github.aranfern.infrastructure.BookRepository;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 @Service
 public class BookService {
@@ -16,5 +15,9 @@ public class BookService {
 
   public List<Book> findAll() {
     return bookRepository.findAll();
+  }
+
+  public void save(Book book) {
+    bookRepository.save(book);
   }
 }
