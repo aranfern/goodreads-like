@@ -2,6 +2,7 @@ package com.github.aranfern.infrastructure;
 
 import com.github.aranfern.domain.Book;
 import com.github.aranfern.domain.BookNotFoundException;
+import com.github.aranfern.domain.BookRepository;
 import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;

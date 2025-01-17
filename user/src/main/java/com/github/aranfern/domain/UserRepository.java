@@ -1,6 +1,5 @@
-package com.github.aranfern.infrastructure;
+package com.github.aranfern.domain;
 
-import com.github.aranfern.domain.User;
 import java.util.UUID;
 
 public interface UserRepository {

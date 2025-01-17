@@ -2,6 +2,7 @@ package com.github.aranfern.infrastructure;
 
 import com.github.aranfern.domain.User;
 import com.github.aranfern.domain.UserNotFound;
+import com.github.aranfern.domain.UserRepository;
 import java.util.HashMap;
 import java.util.UUID;
 import org.springframework.stereotype.Repository;

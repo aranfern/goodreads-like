@@ -1,6 +1,5 @@
-package com.github.aranfern.infrastructure;
+package com.github.aranfern.domain;
 
-import com.github.aranfern.domain.Book;
 import java.util.List;
 import java.util.UUID;
 

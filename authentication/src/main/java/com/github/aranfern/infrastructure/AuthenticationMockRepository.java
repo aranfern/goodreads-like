@@ -1,5 +1,6 @@
 package com.github.aranfern.infrastructure;
 
+import com.github.aranfern.domain.AuthenticationRepository;
 import com.github.aranfern.domain.LoginRequest;
 import com.github.aranfern.domain.LoginResponse;
 import io.jsonwebtoken.Jwts;

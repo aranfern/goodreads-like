@@ -1,7 +1,7 @@
 package com.github.aranfern.application;
 
 import com.github.aranfern.domain.Book;
-import com.github.aranfern.infrastructure.BookRepository;
+import com.github.aranfern.domain.BookRepository;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.stereotype.Service;

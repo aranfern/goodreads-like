@@ -1,8 +1,8 @@
 package com.github.aranfern.application;
 
+import com.github.aranfern.domain.AuthenticationRepository;
 import com.github.aranfern.domain.LoginRequest;
 import com.github.aranfern.domain.LoginResponse;
-import com.github.aranfern.infrastructure.AuthenticationRepository;
 import org.springframework.stereotype.Service;
 
 @Service
